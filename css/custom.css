@@ -1,0 +1,33 @@
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+.body{
+    background-color: lavender;
+}
+.block1{
+    background-color: #fff;
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    font-weight: bold;
+    font-family: Courier New, monospace;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.line{
+    margin: 20px 0;
+    border: none;
+    border-top: 2px dashed #ddd;
+}
+li:hover{
+    background-color: #df3b49;
+    color: #ffffff; /* Цвет ссылок */
+}
+.block2{
+    background-color: #ede8e8;
+    padding-left: 20px;
+    width: 400px;
+    margin: auto;
+    line-height: 20px;
+    text-align: right;
+}

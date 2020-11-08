@@ -1,0 +1,31 @@
+.body{
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/seamless_paper_texture.png)
+}
+.block2{
+    width: 79%;
+    text-align: justify;
+    font-family: Courier New, monospace;
+    /*line-height: 35px;*/
+    padding-top: 30px;
+    /*padding-left: 200px;*/
+}
+.block1{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+}
+.block1 .content{
+    background: white;
+    /*margin-right: 30px;*/
+    text-align: center;
+    margin: 10px;
+    border: 1px black solid;
+    /*margin-top: 100px;*/
+}
+.main{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,19 @@
+body{
+    background: #a5ab90;
+}
+.main{
+    width: 600px;
+    text-align: center;
+}
+
+.block1{
+    margin: auto;
+    margin-top: 200px;
+    width: 300px;
+    height: 80px;
+    background: #2a8c48;
+    text-align: center;
+    box-shadow: 10px 10px 3px #800300;
+    line-height: 70px;
+    border-radius: 8px;
+}

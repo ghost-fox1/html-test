@@ -1,0 +1,74 @@
+.main{
+    width: 750px;
+    height: 320px;
+    margin: auto;
+    margin-top: 200px;
+    border-left: #dddddd solid 15px;
+    padding: 10px;
+}
+.textStyle{
+    font-size: 25px;
+    font-family: Noto Sans, sans-serif;
+    margin-bottom: 20px;
+}
+.textStyle1{
+    font-size: 11px;
+    font-family: Noto Sans, sans-serif;
+    color: #9f9c99;
+}
+.textStyle2{
+    font-size: 12px;
+    font-family: Noto Sans, sans-serif;
+    color: #8b8283;
+}
+.block-style{
+    background: #98999b;
+    color: white;
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 4px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.inline{
+    display: inline-block;
+}
+.img1{
+    background: url("http://magon.net.ru/wp-content/themes/imagine/images/date-ico.png") no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+}
+.img2{
+    background: url("http://magon.net.ru/wp-content/themes/imagine/images/cat-ico.png") no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+}
+.img3{
+    background: url("http://magon.net.ru/wp-content/themes/imagine/images/comment-ico-w.png")  no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 271px;
+}
+.img4{
+    width: 230px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.text{
+    margin-top: 20px;
+    width: 470px;
+}
+strong{
+    color: #747a76;
+}
+.ssylka{
+    margin-left: 261px;
+    margin-top: 10px;
+}

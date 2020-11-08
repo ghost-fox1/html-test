@@ -1,0 +1,34 @@
+.main{
+    width: 870px;
+    height: 41px;
+    margin: auto;
+    margin-top: 300px;
+    background-image: linear-gradient(to bottom, #6A969D, #3C5155);
+    display: flex;
+    flex-direction: row;
+}
+.items{
+    padding: 10px;
+    margin: 2px;
+    color: white;
+    font-family: "PT Sans Narrow", Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-size: 16px;
+}
+.style{
+    background:  #c2eb85;
+    box-shadow: inset 0px 0px 5px #333333;
+    padding: 10px;
+    margin: 2px;
+    font-family: "PT Sans Narrow", Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    font-size: 16px;
+    color: #547a81;
+    border-radius: 5px;
+}
+.items:hover{
+    border-bottom: #c2eb85 solid 3px;
+    color: #c2eb85;
+}
+.style:hover{
+    background:  #fbd4fb;
+    border-radius: 0px;
+}

@@ -1,0 +1,31 @@
+.main{
+    width: 750px;
+    height: 60px;
+    margin: auto;
+    background: #dff6e1;
+    border: #b8e5bc solid 1px;
+}
+.img{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+.img1{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+.textStyle{
+    font-weight: 600;
+    color: #2e579f;
+    font-size: 16px;
+}
+.textStyle1{
+    color: #619549;
+    font-size: 16px;
+}
+.flex{
+    display: inline-flex;
+    align-items: center;
+    margin: 20px;
+}

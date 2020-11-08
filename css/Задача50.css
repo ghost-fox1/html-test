@@ -1,0 +1,44 @@
+.main{
+    width: 700px;
+    height: 160px;
+    margin: auto;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 30px;
+    height: 100px;
+    left: 576px;
+    background: #ebebeb;
+    position: absolute;
+}
+.right{
+    width: 30px;
+    height: 100px;
+    left: 1246px;
+    background: #ebebeb;
+    position: absolute;
+}
+.container{
+    width: 700px;
+    height: 60px;
+    border-bottom: #f46b04 solid 5px;
+    display: flex;
+    background: #3f3f3f;
+    position: absolute;
+    top: 317px;
+}
+.element{
+    color: #a1a1a1;
+    padding: 20px;
+}
+.element:first-child{
+    margin-left: 20px;
+}
+.element:last-child{
+    margin-right: 20px;
+}
+.element:hover{
+    color: #f46b04;
+}

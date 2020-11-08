@@ -1,0 +1,84 @@
+.block{
+    background-color: #ede8e8;
+    padding-left: 20px;
+    width: 600px;
+    margin: auto;
+    line-height: 20px;
+    padding: 5px;
+    text-align: right;
+}
+.textStyle{
+    color: crimson;
+    font-style: Times New Roman, serif;
+}
+.textStyl1{
+    color: black;
+    font-style: Times New Roman, serif;
+}
+.lineHeihgt{
+    line-height: 50px;
+}
+/*
+.title {
+    overflow: hidden;
+    text-align: left;
+    font-size: 30px;
+}
+.title div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.title:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #D3D3D3;
+    position: relative;
+}
+
+.title:after {
+    margin-right: -100%;
+    right: -14px;
+}
+
+.textStyle1{
+    font-family: Snell Roundhand, cursive;
+    font-weight: 200;
+    font-size: 11px;
+    color: #696969;
+}
+.textStyle {
+    font-family: New Century Schoolbook,TeX Gyre Scola,serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: #B22222;
+}
+.textStyle3 {
+    font-family: New Century Schoolbook,TeX Gyre Scola,serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #000000;
+}
+.textStyle4{
+    font-family: New Century Schoolbook,TeX Gyre Scola,serif;
+    font-weight: 200;
+    font-size: 25px;
+    color: #B22222;
+}
+.block{
+    background: #000000;
+    color: #FFFFFF;
+    width: 550px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+span.textStyle2{
+    font-family: Snell Roundhand, cursive;
+    font-weight: 200;
+    font-size: 11px;
+    color: #B22222;
+*/

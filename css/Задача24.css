@@ -1,0 +1,34 @@
+.body{
+    background: url("https://static.schools.by/images/header-bg/img-16.jpg") no-repeat;
+    background-size: 100%;
+}
+.main{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    justify-content: space-evenly;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    background: #4200ff;
+    border-radius: 5%;
+    margin: 30px;
+}
+.square2{
+    width: 100px;
+    height: 100px;
+    background: #1c8000;
+    border-radius: 5%;
+}
+.square3{
+    width: 50px;
+    height: 50px;
+    background: #f30e02;
+    border-radius: 5%;
+}
+.square-container{
+    transform: rotate(45deg);
+}

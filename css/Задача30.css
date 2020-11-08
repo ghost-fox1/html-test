@@ -1,0 +1,19 @@
+.main{
+    width: 240px;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+.textStyle{
+    font-family: "Times New Roman", serif;
+    background: #eaf0f0;
+    font-size: 27px;
+    font-style: oblique;
+    padding: 5px 20px;
+    line-height: 1;
+}
+.textStyle2 {
+    font-size: 18px ;
+    color: #397671;
+    font-family: sans;
+}

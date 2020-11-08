@@ -1,0 +1,18 @@
+.main{
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    background: #575450;
+    box-shadow: inset 0px 13px 2px -7px #cc342d;
+    border-radius: 0 0 10px 10px;
+}
+a {
+    color: #e3e3e3 !important;
+    text-decoration: none
+}
+.element{
+    padding: 10px;
+}
+div.element:hover{
+    background: #666a6b;
+}

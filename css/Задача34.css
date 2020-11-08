@@ -1,0 +1,45 @@
+.block{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 200px;
+}
+.name{
+    height: 20px;
+    background: #e18727;
+    padding: 10px;
+}
+.name-style{
+    color: white;
+    font-family: Times New Roman, serif;
+    font-weight: 800;
+    font-size: 17px;
+
+}
+.text{
+    height: 200px;
+    background: #272a2b;
+    color: white;
+}
+code{
+    color: white;
+}
+.text-orange{
+    color: #ffc11b;
+}
+.text-style1{
+    color: #aaa;
+}
+.text-style2{
+    color: #b87668;
+}
+.symb{
+    color: white;
+}
+.container1{
+    padding: 10px;
+}
+.container2{
+    margin-left: 10px;
+    line-height: 20px;
+}

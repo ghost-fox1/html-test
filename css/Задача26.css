@@ -1,0 +1,41 @@
+.body{
+    background: url("http://bgfons.com/upload/paper_grid_PNG5405.png") no-repeat;
+    background-size: 100%;
+}
+.main{
+    width: 900px;
+    margin: auto;
+    margin-top: 400px;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+}
+.square-container{
+    width: 90px;
+    height: 90px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.text-container{
+    display: inline;
+}
+.square{
+    width: 30px;
+    height: 30px;
+    background: #272a2b;
+    float: left;
+}
+
+/*.row div.square:first-child{*/
+/*    float: left;*/
+/*}*/
+.row div.square:last-child{
+    float: right;
+}
+.row.center div.square:first-child{
+    /*float: left;*/
+    visibility: hidden;
+}
+.row.center div.square:last-child{
+    float: left;
+}

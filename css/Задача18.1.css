@@ -1,0 +1,64 @@
+.body{
+    background-image:url("https://www.toptal.com/designers/subtlepatterns/patterns/pinstriped_suit.png");
+}
+.main{
+    margin: auto;
+    width: 600px;
+    margin-top: 100px;
+    border: 10px solid white;
+}
+/*.block{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    height: 100%;*/
+/*}*/
+.flex{
+    /*background:#2e8b8a;*/
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    text-align: center;
+    font-size: 36px;
+}
+.block2{
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/noisy_grid.png");
+    width: 100%;
+    height: 100px;
+    /*flex-grow: 1;*/
+    order: 1;
+}
+.block3{
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/squared_metal.png);
+    width: 30%;
+    height: 300px;
+    /*flex-grow: 2;*/
+    order: 2;
+}
+.bar{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    position: relative;
+}
+.bar strong{
+    position: absolute;
+    top: 0;
+}
+.bar.block3 strong{
+    left: 70px;
+}
+.bar.block4 strong{
+    left: 180px;
+}
+.block4{
+    background: url(https://img-fotki.yandex.ru/get/169451/138971803.0/0_1b1248_72179e6c_L.png);
+    width: 70%;
+    height: 300px;
+    order: 3;
+    /*flex-grow: 2;*/
+}
+.block5{
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/noisy_grid.png");
+    width: 100%;
+    height: 100px;
+    order: 4;
+    /*flex-grow: 1;*/
+}

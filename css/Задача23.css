@@ -1,0 +1,25 @@
+.body{
+    background: #bebebe;
+}
+.main{
+    background: #bebebe;
+    width: 450px;
+    margin: auto;
+    margin-top: 200px;
+}
+.block1{
+    width: 0;
+    height: 0;
+    border: 50px solid;
+    border-color:   transparent transparent #136400 transparent;
+    display: inline-block;
+}
+.block2{
+    width: 0;
+    height: 0;
+    border: 100px solid;
+    border-top-width: 200px;
+    border-bottom: none;
+    border-color:  #136400 transparent transparent transparent;
+    display: inline-block;
+}

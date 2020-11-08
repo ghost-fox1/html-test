@@ -1,0 +1,41 @@
+.main{
+    width: 688px;
+    height: 200px;
+    margin: auto;
+    margin-top: 200px;
+    background: #f2f1f1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-block{
+    background: #344864;
+    color: white;
+    font-size: 63px;
+    font-family: Droid Sans, Tahoma, sans-serif;
+    width: 424px;
+    height: 100px;
+    margin-left: 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 94% 100%, 0% 100%);
+    text-align: -webkit-left;
+}
+.big-block{
+    background: #ced3d9;
+    width: 130px;
+    height: 200px;
+    clip-path: polygon(36% 0%, 100% 0%, 64% 100%, 0% 100%);
+}
+.small-block{
+    background: #ced3d9;
+    width: 91px;
+    height: 200px;
+    margin-right: 20px;
+    clip-path: polygon(46% 0%, 100% 0%, 54% 100%, 0% 100%);
+}
+
+.block{
+    background: #344864;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}

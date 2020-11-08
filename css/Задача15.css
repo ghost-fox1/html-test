@@ -1,0 +1,44 @@
+li:first-child {
+    border-top: 1px solid #c1c0d1; /* Параметры границы */
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+    border-bottom: 1px solid #c1c0d1; /* Параметры границы */
+    border-top: none;
+    padding: 10px; /* Поля вокруг текста */
+    /*border-bottom-color: #c1c0d1;*/
+}
+.body{
+    background-color: lavender;
+}
+.block1{
+    background-color: #ffffff;
+    width: 230px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: Courier New, monospace;
+    line-height: 35px;
+    padding-top: 15px;
+}
+.block2{
+    background-color: #d4c7c7;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+}
+ul{
+    padding-inline-start: 0px;
+}
+a{
+    text-decoration: none;
+    color: #5a5fe8;
+}
+li:hover{
+    background-color: #5a5fe8 ;
+    color: #ffffff; /* Цвет ссылок */
+
+}
+li:hover a{
+    color: #ffffff; /* Цвет ссылок */
+}

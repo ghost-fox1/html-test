@@ -1,0 +1,77 @@
+.container{
+    width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    border: #f2f2f2 solid 10px;
+}
+.block1{
+    height: 8%;
+    background: #4576ba;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.block2{
+    height: 81%;
+    background: white;
+    padding: 10px;
+
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    list-style: none;
+    display: block;
+}
+img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+ li.google::before{
+     content: "";
+     background-image: url("https://www.google.com/intl/ru/homepage/images/google_favicon_64.png");
+     background-size: 20px;
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     position: relative;
+     top: 2px;
+}
+li.yandex::before {
+    content: "";
+    background-image: url("https://lh3.ggpht.com/Be6CInmxjmkS7OU-DK5L_iw8qsvQ-mJy7owWVUEH1hsrT-OucqDV2WBo_IJ1Q3vlTBF4=w300");
+    background-size: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+li.translate::before{
+    content: "";
+    background-image: url("http://www.translate.meta.ua/images/logo.jpg");
+    background-size: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+li.meta::before{
+    content: "";
+    background-image: url("http://www.translate.meta.ua/images/logo.jpg");
+    background-size: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+li{
+    font-family: Nimbus Sans L, Arial, sans-serif;
+}

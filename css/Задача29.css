@@ -1,0 +1,35 @@
+.main{
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+/*.list{*/
+/*    width: 200px;*/
+/*    margin: 5px;*/
+/*}*/
+.menu-item{
+    border-bottom: #bbbbbb solid 1px;
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+}
+.list-item.triangle:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color:  transparent transparent transparent black ;
+    display: inline-block;
+    margin: 5px;
+}
+.list-item{
+    padding: 5px;
+}
+.visually-hidden {
+    display: none;
+}
+.visually-hidden:checked ~ div.for-hide {
+    display: none;
+}
