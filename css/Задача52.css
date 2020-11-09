@@ -36,7 +36,8 @@
 .element:nth-child(7) {
     margin-right: 44px;
 }
-.element-search{
+.element.search{
+    margin-left: 0;
     display: flex;
     position: relative;
     flex-grow: 7;
