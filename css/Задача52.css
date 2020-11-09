@@ -10,7 +10,7 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-.container{
+.menu-item{
     width: 98%;
     height: 46px;
     margin: 5px;
@@ -22,13 +22,13 @@
     border: #656565 solid 2px;
 }
 .element{
-    flex-grow: 7;
+    flex-grow: 2;
     margin-left: 15px;
 }
-.passive{
-    flex-grow: 7;
-    margin-left: 15px;
-}
+/*.passive{*/
+/*    flex-grow: 1;*/
+/*    margin-left: 15px;*/
+/*}*/
 .element:nth-child(4),
 .passive:nth-child(6) {
     border-right: #656565 solid 1px;
@@ -36,23 +36,23 @@
 .element:nth-child(7) {
     margin-right: 44px;
 }
-.element-container{
+.element-search{
+    display: flex;
     position: relative;
-    flex-grow: 2;
+    flex-grow: 7;
 }
 label{
     color: #b3b2b0;
-    padding: 0px;
 }
 .visually-hidden{
     background: white;
-    width: 254px;
     border-radius: 10px;
     height: 30px;
     align-items: center;
     padding-left: 22px;
     font-size: 14px;
     position: relative;
+    flex-grow: 2;
 }
 .icon{
     background: transparent url(http://icongal.com/gallery/download/7439/160/png);
@@ -70,6 +70,7 @@ label{
 .passive a {
     color: #858583;
     font-weight: 800;
+    pointer-events: none;
 }
 .element a:hover{
     color: #666a6b;
