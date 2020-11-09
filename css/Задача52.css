@@ -1,4 +1,4 @@
-.main{
+.main {
     width: 900px;
     /* height: 71px; */
     margin: auto;
@@ -10,7 +10,8 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-.menu-item{
+
+.menu-item {
     width: 98%;
     height: 46px;
     margin: 5px;
@@ -21,11 +22,13 @@
     border-radius: 5px;
     border: #656565 solid 2px;
 }
-.element{
+
+.element {
     position: relative;
     flex-grow: 2;
     margin-left: 15px;
 }
+
 /*.passive{*/
 /*    flex-grow: 1;*/
 /*    margin-left: 15px;*/
@@ -37,13 +40,15 @@
 .element:last-child {
     margin-right: 44px;
 }
-.element.search{
+
+.element.search {
     margin-left: 0;
     display: flex;
     position: relative;
     flex-grow: 7;
 }
-.element.right-border::after{
+
+.element.right-border::after {
     content: "";
     background: #656565;
     width: 2px;
@@ -52,10 +57,12 @@
     top: -5px;
     position: absolute;
 }
-label{
+
+label {
     color: #b3b2b0;
 }
-.visually-hidden{
+
+.visually-hidden {
     background: white;
     border-radius: 10px;
     height: 30px;
@@ -65,7 +72,8 @@ label{
     position: relative;
     flex-grow: 2;
 }
-.icon{
+
+.icon {
     background: transparent url(http://icongal.com/gallery/download/7439/160/png);
     background-size: 20px;
     width: 20px;
@@ -74,15 +82,18 @@ label{
     left: 227px;
     top: 7px;
 }
+
 .element a {
     color: white;
     font-weight: 800;
 }
+
 .passive a {
     color: #858583;
     font-weight: 800;
     pointer-events: none;
 }
-.element a:hover{
+
+.element a:hover {
     color: #666a6b;
 }
