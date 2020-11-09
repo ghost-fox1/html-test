@@ -43,9 +43,6 @@
     position: relative;
     flex-grow: 7;
 }
-.element.right-border {
-    /*border-right: #656565 solid 1px;*/
-}
 .element.right-border::after{
     content: "";
     background: #656565;
