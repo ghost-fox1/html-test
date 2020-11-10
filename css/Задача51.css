@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: row;
 }
-.container{
+.menu-container{
     width: 666px;
     height: 43px;
     background: #444444;
@@ -20,20 +20,20 @@ body{
     padding-right: 54px;
     position: relative;
 }
-.items{
+.item{
     color: white;
     font-size: 20px;
     flex-grow: 1;
     text-align: center;
 }
-.items:hover{
+.item:hover{
     color: #ffffff;
     background-color: #FF800B;
     font-size: 20px;
     height: calc(100% + 9px);
     z-index: 100;
 }
-.container:after{
+.menu-container:after{
     content: '';
     display: block;
     width: 700px;
@@ -43,21 +43,23 @@ body{
     left: 0px;
     bottom: -10px;
 }
-.style1{
+.item-red{
     background: #f30e02;
 }
-.style2{
+.item-violet{
     background: #a802ff;
 }
-.style3{
+.item-blue{
     background: #4aa6f3;
 }
-.style4{
+.item-green{
     background: #41d05f;
 }
-.style5{
-    color: #ffffff;
+.item-orange{
     background-color: #FF800B;
+}
+.item-selected{
+    color: #ffffff;
     font-size: 20px;
     height: calc(100% + 9px);
     z-index: 100;
