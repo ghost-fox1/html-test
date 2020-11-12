@@ -1,0 +1,88 @@
+.main {
+    width: 870px;
+    margin: auto;
+    margin-top: 300px;
+}
+.container {
+    width: 274px;
+    height: 300px;
+    background: #e6e6e6;
+    border-radius: 8px;
+}
+
+.table-calendar {
+     width: 250px;
+     height: 181px;
+     font-family: Verdana;
+     border-radius: 17px;
+     margin-right: 10px;
+     margin-left: 10px;
+     border-collapse: collapse;
+     text-align: right;
+}
+.block-for-tittle {
+    width: 274px;
+    height: 40px;
+    font-weight: 800;
+    padding-top: 6px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.title-green {
+    background: #207853;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.title-black {
+    background: #1f1a13;
+    position: relative;
+}
+
+.border-left {
+    width: 0;
+    height: 0;
+    border: 17px solid;
+    border-color: transparent #136400 transparent transparent;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+
+.border-right {
+    width: 0;
+    height: 0;
+    border: 17px solid;
+    border-color: transparent transparent transparent #136400;
+    display: inline-block;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+td {
+    color: #7a7b7d;
+    font-size: 18px;
+}
+
+tr {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pasive{
+    color: #1f1a13;
+}
+
+.bg-green{
+    background: #207853;
+    color: white;
+}
+
+.pasive td,
+ td:hover{
+    background: #207853;
+    color: white;
+}
+
