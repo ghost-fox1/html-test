@@ -1,8 +1,4 @@
-.main {
-    width: 870px;
-    margin: auto;
-    margin-top: 300px;
-}
+
 .container {
     width: 274px;
     height: 300px;
@@ -15,8 +11,8 @@
      height: 181px;
      font-family: Verdana;
      border-radius: 17px;
-     margin-right: 10px;
-     margin-left: 10px;
+     margin: 0px 10px;
+     /*margin-left: 10px;*/
      border-collapse: collapse;
      text-align: right;
 }
@@ -40,8 +36,6 @@
 }
 
 .border-left {
-    width: 0;
-    height: 0;
     border: 17px solid;
     border-color: transparent #136400 transparent transparent;
     display: inline-block;
@@ -51,8 +45,8 @@
 }
 
 .border-right {
-    width: 0;
-    height: 0;
+    /*width: 0;*/
+    /*height: 0;*/
     border: 17px solid;
     border-color: transparent transparent transparent #136400;
     display: inline-block;
@@ -75,12 +69,11 @@ tr {
     color: #1f1a13;
 }
 
-.bg-green{
+.chosed{
     background: #207853;
     color: white;
 }
 
-.pasive td,
  td:hover{
     background: #207853;
     color: white;
