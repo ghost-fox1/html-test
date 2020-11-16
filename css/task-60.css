@@ -1,0 +1,23 @@
+.main{
+    width: 700px;
+    height: 200px;
+    margin: auto;
+    margin-top: 300px;
+    border-radius: 10px;
+    background: #f30a31;
+    outline: 2px dashed rgba(255,255,255,0.8); /* Пунктирная рамка */
+    outline-offset: -10px; /* Выводим рамку внутри элемента */
+    outline-radius: 10px;
+    color: white;
+    position: relative;
+}
+span{
+    background: #f59757;
+    color: #1f1a13;
+}
+.text{
+    position: absolute;
+    font-size: 30px;
+    top: 83px;
+    left: 26%;
+}
