@@ -7,5 +7,6 @@ window.onload = function () {
     let f = prompt('Введи число f');
     console.log(a, b, f);
     let summ = (a + b - f / a) + f * a * a - (a + b);
-    print(summ);
+    print(Math.floor(summ));
+    print(Math.ceil(summ));
 }
