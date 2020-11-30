@@ -1,0 +1,62 @@
+.main {
+    width: 900px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.border {
+    border: #efefef solid;
+    border-width: 2px 0px 2px 0px;
+}
+
+.title {
+    width: 95%;
+    font-size: 30px;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 800;
+    margin: 10px;
+    text-align: center;
+    flex-grow: 4;
+}
+
+.text-container {
+    width: 401px;
+    flex-grow: 1;
+    margin-right: 17px;
+}
+
+.img-title {
+    flex-grow: 1;
+}
+
+.title-for-text {
+    flex-grow: 10;
+    font-size: 23px;
+    font-weight: 600;
+    padding-top: 47px;
+    padding-left: 10px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.text {
+    font-size: 18px;
+}
+
+span {
+    font-weight: 700;
+}
+
+ol {
+    margin-left: -23px;
+}
