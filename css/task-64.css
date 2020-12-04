@@ -1,0 +1,101 @@
+.main {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    background: #e84b3d;
+    color: white;
+    background-image: url("https://refactoring.guru/images/content-public/windmill-ugly.svg"), url("https://refactoring.guru/images/content-public/windmill-pretty.svg");
+    background-repeat: no-repeat;
+    background-position: 11% 80%, 90% 65%;
+    background-size: 18%;
+    align-items: center;
+    padding: 5px;
+}
+
+.language {
+    width: 231px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 38px;
+    border-radius: 30px;
+    background: #d04436 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfgCxAKKDnylnTYAAAA6UlEQVQoz33RPUoDURTF8RtJoagrsLIwAzbuwGVYiJ2IYBv8aHQFmSKFKBbaCWYLaUw/YOsChHSDiJBC489iPmPhv3qPd7jv3HMiSmxJZXK5TCqJNroGfkx9e/GpYKjbPI9xJtHTc69iXEoMzR2W4hs8OPBcTIkICW7rzzp2nUZY9QSSkGJue8HTmkczkIYMbPyxXJGFHFy3BPsa8krAeYQVfX2vi4KsPM6c2MHcR0uQLcWknLwcl7EZxzGJ9ZbfSbFmw9SFdyPT8p4UQbX5chWh464Mqo66YU/HkVkddV1WxcjbQln/1/0LvgA8gpJmc10AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMTEtMTZUMTA6NDA6NTcrMDE6MDB2F9mNAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTExLTE2VDEwOjQwOjU3KzAxOjAwB0phMQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=) no-repeat 4% 50%;
+    background-size: 10px;
+    margin: auto;
+}
+
+.border {
+    border-radius: 30px/27px;
+    width: 40px;
+    height: 33px;
+    background: #d14136;
+    position: absolute;
+    left: 219px;
+}
+
+.text1 {
+    width: 72px;
+    font-size: 10px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.text1:hover {
+    background: #fff;
+    color: #e74c3c;
+}
+
+.text-container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "PT Sans", sans-serif;
+    position: relative;
+}
+
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.title:after{
+    content: " ";
+    width: 279px;
+    margin: 20px;
+    padding: 2px;
+    border-bottom: #ac311d dotted 3px;
+    position: absolute;
+    left: -13px;
+    top: 27px;
+}
+
+.text-2 {
+    font-size: 20px;
+    margin-top: 21px;
+}
+
+.text-2:after{
+    content: " ";
+    width: 105px;
+    margin: 20px;
+    padding: 2px;
+    border-bottom: #ac311d dotted 3px;
+    position: absolute;
+    left: 73px;
+    top: 143px;
+}
+
+.text-container-2 {
+    padding: 8px;
+    font-size: 10px;
+    margin-top: 21px;
+    border: white solid 1px;
+    width: 84px;
+    /* margin: auto; */
+    margin-left: 96px;
+}
