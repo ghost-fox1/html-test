@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/NewZadanie.css">
+    <script src="../js-tasks/NewZadanie.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="main">
+    <div class="block1">
+        <div class="columns">
+            <img src="http://s1.iconbird.com/ico/2013/12/505/w450h4001385925286User.png">
+            <div class="item-name">
+                <input placeholder="First Name" id="first_name">
+            </div>
+            <div class="item-name">
+                <input placeholder="Last Name" id="last_name">
+            </div>
+        </div>
+        <div class="columns">
+            <img src="http://s1.iconbird.com/ico/2013/12/505/w450h4001385925286User.png">
+            <div class="item-name">
+                <input placeholder="Company" id="company">
+            </div>
+            <div class="item-name">
+                <input placeholder="Job title" id="job-title">
+            </div>
+        </div>
+        <div class="columns">
+            <img src="http://s1.iconbird.com/ico/2013/12/505/w450h4001385925286User.png">
+            <div class="item-name">
+                <input placeholder="Email" id="email">
+            </div>
+        </div>
+        <div class="columns">
+            <img src="http://s1.iconbird.com/ico/2013/12/505/w450h4001385925286User.png">
+            <div class="item-name">
+                <input placeholder="Phone" id="phone">
+            </div>
+        </div>
+        <div class="columns">
+            <img src="http://s1.iconbird.com/ico/2013/12/505/w450h4001385925286User.png">
+            <div class="item-name">
+                <input placeholder="Notes" id="notes">
+            </div>
+            <div>
+                <input type="submit" value="Добавить" class="knopka" onclick="addContacts()">
+            </div>
+            <div>
+                <input type="submit" value="sort" class="knopka" onclick="sort()">
+            </div>
+        </div>
+    </div>
+    <div class="block2">
+        <table id="table">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone number</th>
+                <th>Job tittle</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
