@@ -1,5 +1,5 @@
 .main {
-    width: 1200px;
+    width: 1500px;
     margin: auto;
     margin-top: 200px;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .block1 {
-    width: 45%;
+    width: 55%;
     border: #1b1b1b dashed 1px;
     border-radius: 10px;
     margin: 5px;
@@ -18,7 +18,7 @@
 }
 
 .block2 {
-    width: 47%;
+    width: 41%;
 }
 
 .columns {
@@ -60,9 +60,22 @@ th {
     width: 20%;
     padding: 11px;
 }
-
+th.can-sort{
+    position: relative;
+}
 tr:first-child {
     width: 30%;
     border-bottom: #1b1b1b solid 5px;
 }
 
+th.can-sort.sorted::after{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}

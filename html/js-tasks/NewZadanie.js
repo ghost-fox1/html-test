@@ -1,9 +1,9 @@
 function addContacts() {
     let contact = {
         name: document.getElementById('first_name').value + document.getElementById('last_name').value,
-        phone: document.getElementById('email').value,
-        company: document.getElementById('phone').value,
-        email: document.getElementById('company').value + document.getElementById('job-title').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value + document.getElementById('job-title').value,
     };
     addRowByContactObject(contact);
     contacts.push(contact);
@@ -29,7 +29,7 @@ let contacts = [];
  * @param contact
  */
 function addRowByContactObject(contact) {
-    let tableRef = document.getElementById('table');
+    let tableRef = document.querySelector('table tbody');
 
     // Insert a row in the table at row index 0
     let newRow = tableRef.insertRow();
@@ -67,8 +67,8 @@ function addRowByContactObject(contact) {
 }
 
 // console.log(contacts.sort((a, b) => (a.name > b.phone) ? 1 : (a.name === b.phone) ? ((a.company > b.email) ? 1 : -1) : -1 ));
-function sort() {
-    console.log(contacts.sort((a, b) => (a.name > b.name) ? 1 : -1));
+function sort(sortBy) {
+    console.log(contacts.sort((a, b) => (a[sortBy] > b[sortBy]) ? 1 : -1));
     cleanTable();
     contacts.forEach(function (item, i, arr) {
         addRowByContactObject(item);
@@ -76,17 +76,24 @@ function sort() {
 }
 
 function cleanTable() {
-
 //g.deleteRow(1);   можно удалить первую строку таблицы всегда, не трогая 0 строку это название
-    let taable = document.getElementById('table');
-
+//     let taable = document.getElementById('table');
+    let taable = document.querySelector('table tbody');
     while (taable.firstChild) {
         taable.removeChild(taable.firstChild);
     }
-    taable.innerHTML = "<tr>\n" +
-        "                <th>Name</th>\n" +
-        "                <th>Email</th>\n" +
-        "                <th>Phone number</th>\n" +
-        "                <th>Job tittle</th>\n" +
-        "            </tr>";
+    // $("tbody").children().remove();
 }
+
+let th = document.querySelectorAll('th.can-sort');
+th.forEach(function (item){
+    item.onclick = function (event){
+        let sorted = document.querySelector('.sorted');
+        if (sorted != null) {
+            sorted.classList.remove('sorted');
+        }
+        let target = event.target;
+        sort(target.dataset.sortBy);
+        target.classList.add("sorted");
+    };
+});

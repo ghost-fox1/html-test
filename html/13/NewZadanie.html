@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../css/NewZadanie.css">
-    <script src="../js-tasks/NewZadanie.js"></script>
+    <script src="../js-tasks/NewZadanie.js" DEFER></script>
     <title>Title</title>
 </head>
 <body>
@@ -50,16 +50,24 @@
             <div>
                 <input type="submit" value="sort" class="knopka" onclick="sort()">
             </div>
+            <div>
+                <input type="submit" value="Delite" class="knopka" onclick="cleanTable()">
+            </div>
         </div>
     </div>
     <div class="block2">
-        <table id="table">
+        <table  id="table">
+            <thead>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
+                <th class="can-sort" data-sort-by="name">Name</th>
+                <th class="can-sort" data-sort-by="email">Email</th>
                 <th>Phone number</th>
-                <th>Job tittle</th>
+                <th class="can-sort" data-sort-by="company">Job tittle</th>
             </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
         </table>
     </div>
 </div>
