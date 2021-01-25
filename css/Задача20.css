@@ -16,7 +16,7 @@ body{
 .color-background{
     background: white;
 }
-.block1{
+.add-form{
     width: 3%;
     height: 200px;
     flex-grow: 1;

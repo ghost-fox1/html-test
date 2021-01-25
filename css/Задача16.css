@@ -9,13 +9,13 @@
     padding-top: 30px;
     /*padding-left: 200px;*/
 }
-.block1{
+.add-form{
     display: flex;
     width: 20%;
     flex-direction: column;
     justify-content: center;
 }
-.block1 .content{
+.add-form .content{
     background: white;
     /*margin-right: 30px;*/
     text-align: center;

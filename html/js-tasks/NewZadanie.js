@@ -75,25 +75,76 @@ function sort(sortBy) {
     });
 }
 
+function sortColumn(event) {
+    let sorted = document.querySelector('.sorted');
+    if (sorted != null) {
+        sorted.classList.remove('sorted');
+    }
+    let target = event.target;
+    sort(target.dataset.sortBy);
+    target.classList.add("sorted");
+}
+
 function cleanTable() {
-//g.deleteRow(1);   можно удалить первую строку таблицы всегда, не трогая 0 строку это название
-//     let taable = document.getElementById('table');
     let taable = document.querySelector('table tbody');
     while (taable.firstChild) {
         taable.removeChild(taable.firstChild);
     }
-    // $("tbody").children().remove();
 }
 
-let th = document.querySelectorAll('th.can-sort');
-th.forEach(function (item){
-    item.onclick = function (event){
-        let sorted = document.querySelector('.sorted');
-        if (sorted != null) {
-            sorted.classList.remove('sorted');
-        }
-        let target = event.target;
-        sort(target.dataset.sortBy);
-        target.classList.add("sorted");
-    };
-});
+function clickOn() {
+    let div = document.querySelector('.stena1');
+    div.classList.remove('visible');
+    div.classList.add("invisible");
+    let div1 = document.querySelector('.stena2');
+    div1.classList.remove('invisible');
+    div1.classList.add("visible");
+}
+
+function closeWindow() {
+    // let div1 = document.querySelector('.close');
+    // div1.parentNode.classList.remove('visible');
+    // div1.parentNode.classList.add("invisible");
+
+    let div = document.querySelector('.stena2');
+    div.classList.remove('visible');
+    div.classList.add("invisible");
+    let div1 = document.querySelector('.stena1');
+    div1.classList.remove('invisible');
+    div1.classList.add("visible");
+}
+
+function addListeners() {
+    addSortColumnListener();
+    addCloseWindowListener();
+    addDeleteListener();
+}
+
+function addCloseWindowListener() {
+    let closeButton = document.querySelector('.close');
+    closeButton.onclick = closeWindow;
+}
+
+function addSortColumnListener() {
+    let th = document.querySelectorAll('th.can-sort');
+    th.forEach(function (item) {
+        item.onclick = sortColumn;
+    });
+}
+
+function addDeleteListener() {
+    let delete1 = document.querySelector('.proverka_svyazi');
+    delete1.onclick = cleanTable;
+}
+
+addListeners();
+
+// function cleanTable() {
+// //comment   g.deleteRow(1);   можно удалить первую строку таблицы всегда, не трогая 0 строку это название
+// //   comment  let taable = document.getElementById('table');
+//     let taable = document.querySelector('table tbody');
+//     while (taable.firstChild) {
+//         taable.removeChild(taable.firstChild);
+//     }
+//     // comment $("tbody").children().remove();
+// }
