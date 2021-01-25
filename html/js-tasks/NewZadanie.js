@@ -118,11 +118,13 @@ function addListeners() {
     addSortColumnListener();
     addCloseWindowListener();
     addDeleteListener();
+    addContactClose();
 }
 
 function addCloseWindowListener() {
     let closeButton = document.querySelector('.close');
     closeButton.onclick = closeWindow;
+
 }
 
 function addSortColumnListener() {
@@ -135,6 +137,22 @@ function addSortColumnListener() {
 function addDeleteListener() {
     let delete1 = document.querySelector('.proverka_svyazi');
     delete1.onclick = cleanTable;
+}
+
+function addContactClose() {
+    let closeButton1 = document.querySelector('.knopka');
+    closeButton1.onclick = function () {
+        addContacts();
+        closeWindow();
+        cleanForm();
+    };
+}
+
+function cleanForm() {
+    let inputs = document.querySelectorAll('.add-form input');
+    inputs.forEach(function (input) {
+        input.value = '';
+    });
 }
 
 addListeners();
