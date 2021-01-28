@@ -4,10 +4,14 @@ function addContacts() {
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         company: document.getElementById('company').value + document.getElementById('job-title').value,
+        id: incrementContactId(),
     };
     addRowByContactObject(contact);
     contacts.push(contact);
+    // это здесь сохраняет
+    saveContacts();
 }
+let contactId = 0;
 
 // let sortedRows = Array.from(table.rows).slice(1).sort((rowA, rowB) => rowA.cells[0].innerHTML > rowB.cells[0].innerHTML ? 1 : -1);
 // table.tBodies[0].append(...sortedRows);
@@ -15,9 +19,53 @@ function addContacts() {
 function deleteRow(btn) {
     let row = btn.parentNode.parentNode;
     row.parentNode.removeChild(row);
+    deleteContactById(btn.getAttribute('contactID'));
+    saveContacts();
+}
+
+function deleteContactById(id) {
+    contacts = contacts.filter(function( obj ) {
+        return obj.id != id;
+    });
 }
 
 let contacts = [];
+
+if (isContactsSeted()) {
+    loadContacts();
+    showContacts();
+}
+
+if (isContactIdSeted()) {
+    loadContactId();
+}
+
+function incrementContactId() {
+    contactId++;
+    localStorage.setItem("contactId", contactId);
+
+    return contactId;
+}
+
+//array
+function loadContactId(){
+    contactId = localStorage.getItem("contactId");
+}
+
+function saveContacts() {
+    localStorage.setItem("contacts", JSON.stringify(contacts));
+}
+
+function loadContacts() {
+    contacts = JSON.parse(localStorage.getItem("contacts"));
+}
+
+function isContactsSeted() {
+    return localStorage.getItem("contacts") !== null;
+}
+function isContactIdSeted() {
+    return localStorage.getItem("contactId") !== null;
+}
 
 //todo
 //отсортировать объекты по свойству //https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/
@@ -62,6 +110,9 @@ function addRowByContactObject(contact) {
     let newText4 = document.createElement('input');
     newText4.setAttribute("type", "button");
     newText4.setAttribute("value", "Delete");
+    //***1 часть todo
+    newText4.setAttribute("contactID", contact.id);
+    //удаление выбранной строки
     newText4.setAttribute("onClick", "deleteRow(this)");
     newCell4.appendChild(newText4);
 }
@@ -69,7 +120,19 @@ function addRowByContactObject(contact) {
 // console.log(contacts.sort((a, b) => (a.name > b.phone) ? 1 : (a.name === b.phone) ? ((a.company > b.email) ? 1 : -1) : -1 ));
 function sort(sortBy) {
     console.log(contacts.sort((a, b) => (a[sortBy] > b[sortBy]) ? 1 : -1));
-    cleanTable();
+    cleanTa();
+    showContacts();
+}
+
+function cleanTa() {
+    let taable = document.querySelector('table tbody');
+    while (taable.firstChild) {
+        taable.removeChild(taable.firstChild);
+    }
+    saveContacts();
+}
+
+function showContacts() {
     contacts.forEach(function (item, i, arr) {
         addRowByContactObject(item);
     });
@@ -85,11 +148,15 @@ function sortColumn(event) {
     target.classList.add("sorted");
 }
 
+//удаление элементов таблицы(кнопка "корзина")
+// ***
 function cleanTable() {
     let taable = document.querySelector('table tbody');
     while (taable.firstChild) {
         taable.removeChild(taable.firstChild);
     }
+    contacts = [];
+    saveContacts();
 }
 
 function clickOn() {
@@ -134,6 +201,8 @@ function addSortColumnListener() {
     });
 }
 
+//кнопка корзины
+//***
 function addDeleteListener() {
     let delete1 = document.querySelector('.proverka_svyazi');
     delete1.onclick = cleanTable;
@@ -166,3 +235,6 @@ addListeners();
 //     }
 //     // comment $("tbody").children().remove();
 // }
+
+//todo при отрисовке контакта надо добавить атрибут у кнопки по которой мы будем определять какой контакт нужно удалять
+//todo написать функцию удаления заданного контакта из  массива по ид

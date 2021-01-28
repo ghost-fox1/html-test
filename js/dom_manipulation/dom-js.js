@@ -24,6 +24,7 @@ divAAAA.appendChild(h3A);
 let divBBBB = document.createElement("div");
 divBBBB.setAttribute('style', 'color: blue');
 divBBBB.setAttribute('regina', 'albert');
+divBBBB.setAttribute('contactId', 6);
 divBBBB.innerText = " Фиалки синие";
 _body.appendChild(divBBBB);
 
