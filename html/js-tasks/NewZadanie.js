@@ -11,6 +11,7 @@ function addContacts() {
     // это здесь сохраняет
     saveContacts();
 }
+
 let contactId = 0;
 
 // let sortedRows = Array.from(table.rows).slice(1).sort((rowA, rowB) => rowA.cells[0].innerHTML > rowB.cells[0].innerHTML ? 1 : -1);
@@ -24,10 +25,12 @@ function deleteRow(btn) {
 }
 
 function deleteContactById(id) {
-    contacts = contacts.filter(function( obj ) {
+    contacts = contacts.filter(function (obj) {
         return obj.id != id;
     });
 }
+
+//todo
 
 let contacts = [];
 
@@ -48,7 +51,7 @@ function incrementContactId() {
 }
 
 //array
-function loadContactId(){
+function loadContactId() {
     contactId = localStorage.getItem("contactId");
 }
 
@@ -63,6 +66,7 @@ function loadContacts() {
 function isContactsSeted() {
     return localStorage.getItem("contacts") !== null;
 }
+
 function isContactIdSeted() {
     return localStorage.getItem("contactId") !== null;
 }
@@ -205,7 +209,13 @@ function addSortColumnListener() {
 //***
 function addDeleteListener() {
     let delete1 = document.querySelector('.proverka_svyazi');
-    delete1.onclick = cleanTable;
+    delete1.onclick = confirmDELITEoN;
+}
+
+function confirmDELITEoN() {
+    if (confirm('Точно все удалить???')) {
+        cleanTable();
+    }
 }
 
 function addContactClose() {
@@ -225,6 +235,43 @@ function cleanForm() {
 }
 
 addListeners();
+
+// let counterLoc = 0;
+//
+//
+// //array загружает сохраненный в локалсторидж данные с переменной
+// function loadCounter() {
+//     counterLoc = localStorage.getItem("counterLoc");
+// }
+//
+// function count() {
+//     counterLoc++;
+//     localStorage.setItem("counterLoc", counterLoc);
+//
+//     return counterLoc;
+// }
+//
+// if (isCounter()) {
+//     loadCounter();
+// }
+//
+// function isCounter() {
+//     return localStorage.getItem("counterLoc") !== null;
+// }
+//
+// function showCounter() {
+//     let counter = document.querySelector('.counter');
+//     let newText1 = document.createTextNode(counterLoc + 'заходили на страницу');
+//     counter.appendChild(newText1);
+// }
+//
+// console.log(count());
+// showCounter();
+
+
+
+let counterObj = new Counter();
+counterObj.doCount().render();
 
 // function cleanTable() {
 // //comment   g.deleteRow(1);   можно удалить первую строку таблицы всегда, не трогая 0 строку это название
