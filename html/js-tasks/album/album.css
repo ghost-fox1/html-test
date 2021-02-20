@@ -1,0 +1,63 @@
+body {
+    background: #3c3a3a;
+}
+
+.main {
+    width: 76%;
+    margin: auto;
+    background: #5558577d;
+    border-radius: 10px;
+    border: 2px solid #26ece3;
+    box-shadow: 0 0 15px rgb(7, 232, 210);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-big {
+    max-width: 89%;
+    max-height: 98%;
+    margin-top: 10px;
+}
+
+.knopka {
+    width: 70px;
+    height: 76px;
+    font-size: 60px;
+    background: rgb(55, 224, 208);
+    border-radius: 28px;
+    border: #1175cc;
+    box-shadow: 0px 0px 19px rgb(55, 224, 208);
+    color: #36505a;
+}
+
+.knopka2 {
+    margin: 10px;
+}
+
+.big {
+    width: 100%;
+    height: 100%;
+}
+
+.box-img {
+    width: 1200px;
+    height: 500px;
+    /* background: #F0FFF0; */
+    text-align: center;
+    margin: 10px;
+}
+
+.img-mini {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.mini {
+    flex-wrap: wrap;
+}
